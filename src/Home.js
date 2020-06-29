@@ -1,15 +1,34 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import ShoeList from './ShoeList'
 
 class Home extends Component {
     constructor(props) {
         super(props)
       
         this.state = {
-           search: ''
+           search: '',
+           orderLow: [],
         }
     
         this.handleSearch = this.handleSearch.bind(this);
+        this.sortByLow = this.sortByLow.bind(this);
+        this.sortByHigh = this.sortByHigh.bind(this);
+        this.sortByRelevance = this.sortByRelevance.bind(this);
+      }
+
+      sortByLow = (e) => {
+        // this.setState({
+        //     orderLow: list.sort((a,b) => a.discountedPrice < b.discountedPrice )
+        // })
+      }
+
+      sortByHigh = (e) => {
+
+      }
+
+      sortByRelevance = (e) => {
+
       }
     
       handleSearch = (e) => {
@@ -75,9 +94,9 @@ class Home extends Component {
                     </div>
                     <div>  
                     <ul><h4>Sort By:</h4>
-                        <li className="sort">Relevance</li>
-                        <li className="sort">Price: Low-High</li>
-                        <li className="sort">Price: High-Low</li>
+                        <li onClick={this.sortByRelevance} className="sort">Relevance</li>
+                        <li onClick={this.sortByLow} className="sort">Price: Low-High</li>
+                        <li onClick={this.sortByHigh} className="sort">Price: High-Low</li>
                     </ul>
                     </div>
                     </div>

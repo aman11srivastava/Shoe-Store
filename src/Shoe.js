@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Shoe = ({r}) => {
 
-    const {id, model, brand, img, price, color} = r
+    const { id, model, brand, img, price, color, discountedPrice } = r
 
     return (
         <div>
@@ -20,7 +20,8 @@ const Shoe = ({r}) => {
                 <h4>{model}</h4>
                 <div className="card-body">
                 <p className="card-text">{brand} {color}</p>
-                <h6>{price}</h6>
+                <h6>{discountedPrice}</h6>
+                <p style={{textDecoration:'line-through', color: '#E5E4E2'}}>{price}</p>
                 </div>
             </div>
         </div>
