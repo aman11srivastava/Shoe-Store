@@ -67,7 +67,7 @@ class Payment extends Component {
     
     render() {
         return (
-            <div className="card">
+            <div className="card" style={{display: 'flex', padding: '10%'}}>
                 <form>
                     <h1>Payment page</h1>
                   <div className="form-row">

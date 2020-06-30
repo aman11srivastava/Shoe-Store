@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-import ShoeList from './ShoeList'
+import ShoeList from './ShoeList' 
 
 class Home extends Component {
     constructor(props) {
@@ -38,9 +38,9 @@ class Home extends Component {
     
     render() {
         return (
-            <div>
-                <div className="App">
-                   <div className="row">
+            <div className="App">
+                <div className="row">
+                    <div className="col-6">
                     <div className="card" style={{width: '24%'}}>
                     <h4 style={{textDecoration: 'underline'}}>Filters</h4>
                     <h5>PRICE</h5>
@@ -92,16 +92,18 @@ class Home extends Component {
                         </li>
                     </ul>
                     </div>
-                    <div>  
+
                     <ul><h4>Sort By:</h4>
                         <li onClick={this.sortByRelevance} className="sort">Relevance</li>
                         <li onClick={this.sortByLow} className="sort">Price: Low-High</li>
                         <li onClick={this.sortByHigh} className="sort">Price: High-Low</li>
                     </ul>
-                    </div>
+                    <div className="col-6"> 
+                    <ShoeList/>
+                    </div>  
                     </div>
                 </div>
-            </div>
+                </div>
         )
     }
 }
