@@ -38,9 +38,8 @@ class Home extends Component {
     
     render() {
         return (
-            <div className="App">
+            <div className="App" style={{display: 'flex', flexDirection:'row'}}>
                 <div className="row">
-                    <div className="col-6">
                     <div className="card" style={{width: '24%'}}>
                     <h4 style={{textDecoration: 'underline'}}>Filters</h4>
                     <h5>PRICE</h5>
@@ -102,7 +101,6 @@ class Home extends Component {
                     <ShoeList/>
                     </div>  
                     </div>
-                </div>
                 </div>
         )
     }

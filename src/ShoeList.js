@@ -20,7 +20,7 @@ class ShoeList extends Component {
           model: "Shoe B",
           brand: "Puma",
           color: "Grey",
-          image: "nike a.jpg",
+          image: "B.jpg",
           price: "Rs 1999",
           discountedPrice: "Rs 1499",
           rating: '4.4'
@@ -31,7 +31,7 @@ class ShoeList extends Component {
           brand: "Adidas",
           rating: '4.8',
           color: "Brown",
-          image: "nike a.jpg",
+          image: "C.jpg",
           discountedPrice: "1999",
           price: "Rs 2499",
         },
@@ -40,7 +40,7 @@ class ShoeList extends Component {
           model: "Shoe D",
           brand: "Adidas",
           color: "Black",
-          image: "nike a.jpg",
+          image: "D.jpg",
           price: "Rs 3999",
           discountedPrice: "Rs 2499",
           rating: '4.9'
@@ -50,7 +50,7 @@ class ShoeList extends Component {
           model: "Shoe E",
           brand: "Nike",
           color: "White",
-          image: "nike a.jpg",
+          image: "E.jpg",
           price: "Rs 1999",
           discountedPrice: "Rs 999",
           rating: '4.1'
@@ -60,7 +60,7 @@ class ShoeList extends Component {
           model: "Shoe F",
           brand: "Nike",
           color: "White",
-          image: "nike a.jpg",
+          image: "E.jpg",
           price: "Rs 1599",
           discountedPrice: "Rs 1099",
           rating: '4.3'
@@ -70,7 +70,7 @@ class ShoeList extends Component {
           model: "Shoe G",
           brand: "Puma",
           color: "Blue",
-          image: "nike a.jpg",
+          image: "G.jpg",
           price: "Rs 2999",
           discountedPrice: "Rs 1899",
           rating: '4.4'
@@ -80,7 +80,7 @@ class ShoeList extends Component {
           model: "Shoe H",
           brand: "Adidas",
           color: "Blue",
-          image: "nike a.jpg",
+          image: "H.jpg",
           price: "Rs 1999",
           discountedPrice: "Rs 1299",
           rating: '4.3'
@@ -90,7 +90,7 @@ class ShoeList extends Component {
           model: "Shoe I",
           brand: "Adidas",
           color: "Brown",
-          image: "nike a.jpg",
+          image: "C.jpg",
           price: "Rs 2599",
           discountedPrice: "Rs 1999",
           rating: '4.5'
@@ -100,7 +100,7 @@ class ShoeList extends Component {
           model: "Shoe J",
           brand: "Puma",
           color: "White",
-          image: "nike a.jpg",
+          image: "B.jpg",
           price: "Rs 1499",
           discountedPrice: "Rs 999",
           rating: '4.0'
@@ -110,7 +110,7 @@ class ShoeList extends Component {
           model: "Shoe K",
           brand: "Nike",
           color: "Blue",
-          image: "nike a.jpg",
+          image: "K.jpg",
           price: "Rs 3599",
           discountedPrice: "Rs 2499",
           rating: '4.9'
@@ -120,7 +120,7 @@ class ShoeList extends Component {
           model: "Shoe L",
           brand: "Puma",
           color: "Grey",
-          image: "A.jpg",
+          image: "B.jpg",
           price: "Rs 2999",
           discountedPrice: "Rs 1999",
           rating: '4.6'
