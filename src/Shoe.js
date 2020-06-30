@@ -21,7 +21,7 @@ const Shoe = ({ list }) => {
           <p className="price" style={{ textDecoration: "line-through", color: " #96a99a" }}>
             {price}
           </p>
-          <p style={{backgroundColor: '#00ff00', marginRight: '47%', marginLeft: '42%'}}>{rating}</p>
+          <p style={{backgroundColor: '#00ff00', marginRight: '44%', marginLeft: '40%'}}>{rating}</p>
         </div>
       </div>
   );

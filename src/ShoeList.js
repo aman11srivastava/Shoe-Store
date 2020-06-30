@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Shoe from "./Shoe";
 class ShoeList extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       list: [
         {
@@ -13,7 +13,7 @@ class ShoeList extends Component {
           price: "Rs 2999",
           discountedPrice: "Rs 1999",
           image: "A.jpg",
-          rating: '4.7'
+          rating: "4.7",
         },
         {
           id: 2,
@@ -23,13 +23,13 @@ class ShoeList extends Component {
           image: "B.jpg",
           price: "Rs 1999",
           discountedPrice: "Rs 1499",
-          rating: '4.4'
+          rating: "4.4",
         },
         {
           id: 3,
           model: "Shoe C",
           brand: "Adidas",
-          rating: '4.8',
+          rating: "4.8",
           color: "Brown",
           image: "C.jpg",
           discountedPrice: "1999",
@@ -43,7 +43,7 @@ class ShoeList extends Component {
           image: "D.jpg",
           price: "Rs 3999",
           discountedPrice: "Rs 2499",
-          rating: '4.9'
+          rating: "4.9",
         },
         {
           id: 5,
@@ -53,7 +53,7 @@ class ShoeList extends Component {
           image: "E.jpg",
           price: "Rs 1999",
           discountedPrice: "Rs 999",
-          rating: '4.1'
+          rating: "4.1",
         },
         {
           id: 6,
@@ -63,7 +63,7 @@ class ShoeList extends Component {
           image: "E.jpg",
           price: "Rs 1599",
           discountedPrice: "Rs 1099",
-          rating: '4.3'
+          rating: "4.3",
         },
         {
           id: 7,
@@ -73,7 +73,7 @@ class ShoeList extends Component {
           image: "G.jpg",
           price: "Rs 2999",
           discountedPrice: "Rs 1899",
-          rating: '4.4'
+          rating: "4.4",
         },
         {
           id: 8,
@@ -83,7 +83,7 @@ class ShoeList extends Component {
           image: "H.jpg",
           price: "Rs 1999",
           discountedPrice: "Rs 1299",
-          rating: '4.3'
+          rating: "4.3",
         },
         {
           id: 9,
@@ -93,7 +93,7 @@ class ShoeList extends Component {
           image: "C.jpg",
           price: "Rs 2599",
           discountedPrice: "Rs 1999",
-          rating: '4.5'
+          rating: "4.5",
         },
         {
           id: 10,
@@ -103,7 +103,7 @@ class ShoeList extends Component {
           image: "B.jpg",
           price: "Rs 1499",
           discountedPrice: "Rs 999",
-          rating: '4.0'
+          rating: "4.0",
         },
         {
           id: 11,
@@ -113,7 +113,7 @@ class ShoeList extends Component {
           image: "K.jpg",
           price: "Rs 3599",
           discountedPrice: "Rs 2499",
-          rating: '4.9'
+          rating: "4.9",
         },
         {
           id: 12,
@@ -123,14 +123,14 @@ class ShoeList extends Component {
           image: "B.jpg",
           price: "Rs 2999",
           discountedPrice: "Rs 1999",
-          rating: '4.6'
+          rating: "4.6",
         },
       ],
     };
   }
   render() {
     return (
-      <div>
+      <div style={{ display: "flex", flexBasis: "33.3%", flexWrap: "wrap" }}>
         {this.state.list.map((c, i) => {
           return <Shoe list={c} />;
         })}
